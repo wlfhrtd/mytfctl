@@ -1,0 +1,8 @@
+#cloud-config
+
+ssh_pwauth: true
+
+password: "${bootstrap_password}"
+
+chpasswd:
+  expire: false
